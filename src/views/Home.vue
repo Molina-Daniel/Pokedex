@@ -1,17 +1,28 @@
 <template>
   <v-container fluid>
-    <!-- <v-card
-      v-for="(pokemon, index) in pokemons"
-      :key="pokemon.name"
-      class="ma-3"
-      :to="'/pokemon/' + Number(index + 1)"
-    >
-      <v-list>
-        <template>
-          <v-subheader :key="pokemon.name">#{{ index+1 }} - {{ pokemon.name }}</v-subheader>
-        </template>
-      </v-list>
-    </v-card>-->
+    <v-toolbar dark color="primary">
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+
+      <v-toolbar-title class="white--text">Title</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon>
+        <v-icon>search</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>apps</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>refresh</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>more_vert</v-icon>
+      </v-btn>
+    </v-toolbar>
     <v-layout row wrap align-center justify-center fill-height>
       <v-flex
         align-self-center

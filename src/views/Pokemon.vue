@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <h1>Under construction! WARRA! BEH!</h1>
     <v-img :src="`https://pokeres.bastionbot.org/images/pokemon/${id}.png`"></v-img>
   </v-container>
 </template>
