@@ -18,7 +18,7 @@ export default new Router({
     {
       path: "/home",
       name: "home",
-      component: Home
+      component: Home,
     },
     {
       path: "/pokemon/:id", // :id can be whatever (:number, etc..)
