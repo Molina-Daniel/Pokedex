@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Landing from "./views/Landing.vue";
 import Home from "./views/Home.vue";
+import Pokemon from "./views/Pokemon.vue";
 
 Vue.use(Router);
 
@@ -18,6 +19,12 @@ export default new Router({
       path: "/home",
       name: "home",
       component: Home
+    },
+    {
+      path: "/pokemon/:id", // :id can be whatever (:number, etc..)
+      name: "pokemon",
+      component: Pokemon,
+      props: true
     },
     {
       path: "/about",

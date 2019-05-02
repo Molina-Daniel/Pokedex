@@ -1,11 +1,14 @@
 <template>
   <v-container>
-    <v-card v-for="(pokemon, index) in pokemons" :key="pokemon.name" class="ma-3">
+    <v-card
+      v-for="(pokemon, index) in pokemons"
+      :key="pokemon.name"
+      class="ma-3"
+      :to="'/pokemon/' + Number(index + 1)"
+    >
       <v-list>
         <template>
-          <v-subheader :key="pokemon.name">
-            <a :href="pokemon.url">{{ index+1 }}. {{ pokemon.name }}</a>
-          </v-subheader>
+          <v-subheader :key="pokemon.name">#{{ index+1 }} - {{ pokemon.name }}</v-subheader>
         </template>
       </v-list>
     </v-card>
