@@ -75,7 +75,7 @@ export default {
   data() {
     return {
       url: "https://pokeapi.co/api/v2/pokemon?offset=0&limit=151",
-      pokemons: [],
+      // pokemons: [],
       card_text: "Texto de prueba"
     };
   },
@@ -94,7 +94,12 @@ export default {
     }
   },
   created() {
-    this.getPokemonName();
+    // this.getPokemonName();
+  },
+  computed: {
+    pokemons() {
+      return this.$store.getters.getAllPokemons;
+    }
   },
   filters: {
     capitalize: function(value) {
@@ -116,10 +121,6 @@ export default {
 }
 .v-card {
   /* max-width: 200px; */
-}
-.v-toolbar {
-  color: brown;
-  background-color: brown;
 }
 .v-card__title {
   padding: 10px;
